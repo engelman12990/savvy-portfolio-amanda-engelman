@@ -1,4 +1,13 @@
-
+*{
+  border: dotted rgb(153, 144, 144);
+  
+}
+h1{
+    /*margin top right bottom left*/
+    margin: 0 auto;
+    width: 100px;
+  
+}
     h1 {
         background-color: yellow;
         
@@ -12,6 +21,11 @@
         background-color:coral;
         color:blueviolet;
 
+    }
+
+    .container{
+        margin: 0 auto;
+        width: 960px;
     }
 
     .tomatify{
