@@ -29,6 +29,14 @@ h1{
     .container{
         margin: 0 auto;
         width: 960px;
+    } 
+    /*means general sibling selector*/
+    figure ~ p {
+        background: pink;
+    }
+    /* Direct sibling selector */
+    figure + p { 
+        background: purple;
     }
 
     .tomatify{
@@ -43,4 +51,8 @@ h1{
     }
     #content {
         background-color: rgb(119, 17, 122);
+    }
+/* Change colors when you hover over links */
+    li:hover {
+        background: teal;
     }
