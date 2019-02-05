@@ -27,6 +27,7 @@ h1{
     }
 
     .container{
+        background-color: black;
         margin: 0 auto;
         width: 960px;
     } 
