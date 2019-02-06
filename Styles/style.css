@@ -37,9 +37,29 @@
   }
   
   #navigation {
-    background: white;
+    background: rgb(116, 112, 112);
     padding: 16px;
     text-transform: uppercase;
+    position: fixed;
+    width: 100%; 
+    top: 0;
+    left: 0;
+  }
+
+    #navigation > ul > li {
+        position: relative;
+    }
+    #navigation > ul > li:hover > ul {
+        display: block;
+    }
+  
+  #navigation > ul > li > ul {
+      position: absolute;
+      background-color: rgb(32, 63, 32);
+      display: none;
+      top: 0;
+      left: 0;
+
   }
   
   #navigation a {
@@ -48,15 +68,16 @@
     min-width: 48px;
   }
   
-  #navigation li {
+  #navigation > ul > li {
     display: inline;
     margin-right: 25px;
     text-decoration: none;
   }
   
   #header {
-    color: rgba(176, 192, 180, 0.226);
-    padding: 10px 0;
+  
+    color: rgb(174, 202, 188);
+    padding-top: 100px;
   }
   
   #content {
