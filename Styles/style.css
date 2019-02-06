@@ -1,58 +1,83 @@
-
-h1{
-    /*margin top right bottom left*/
-    margin: 0 auto;
-    width: 100px;
+* {
+    margin: 0;
+    padding: 0;
+  }
   
-}
-    h1 {
-        background-color: yellow;
-        
-    }
-    h2 {
-        background-color:coral;
-        color:darkred;
-
-    }
-    ul{
-        background-color:coral;
-        color:blueviolet;
-
-    }
-    #navigation li{
-        display: inline;
-    }
-    li:first-of-type {
-        margin-right: 0px;
-    }
-
-    .container{
-        background-color: black;
-        margin: 0 auto;
-        width: 960px;
-    } 
-    /*means general sibling selector*/
-    figure ~ p {
-        background: pink;
-    }
-    /* Direct sibling selector */
-    figure + p { 
-        background: purple;
-    }
-    /* Change colors when you hover over links */
-    li:hover {
-        background: teal;
-    }
-    h1:hover {
-    background: red;
-    }
-
-    .tomatify{
-        color: tomato;
-    }
-    .yellowy{
-        background-color:yellow;
-    }
-    #content {
-        background-color: palevioletred;
-    }
+  a {
+    text-decoration: none;
+  }
+  
+  body {
+    background-color: gray;
+    font-size: 20px;
+  }
+  
+  h3:first-of-type {
+    margin-top: 10px;
+  }
+  
+  hr {
+    margin: 20px 0;
+  }
+  
+  figure {
+    text-align: center;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  ul li {
+    text-indent: 10px;
+  }
+  
+  p:not(:first-of-type) {
+    margin: 10px 5px;
+  }
+  
+  #navigation {
+    background: white;
+    padding: 16px;
+    text-transform: uppercase;
+  }
+  
+  #navigation a {
+    display: inline-block;
+    /* We need block or inline-block to have some properties like 'min-width' to have any effect. */
+    min-width: 48px;
+  }
+  
+  #navigation li {
+    display: inline;
+    margin-right: 25px;
+    text-decoration: none;
+  }
+  
+  #header {
+    color: rgba(176, 192, 180, 0.226);
+    padding: 10px 0;
+  }
+  
+  #content {
+    background: whitesmoke;
+    /* padding: 10px 0; */
+  }
+  
+  .flt-lft {
+    float: left;
+    margin-right: 20px;
+  }
+  
+  .container {
+    margin: auto;
+    width: 960px;
+  }
+  
+  .container > div {
+    padding-top: 10px;
+  }
+  
+  li:hover {
+    background: rgb(27, 58, 39);
+  }
