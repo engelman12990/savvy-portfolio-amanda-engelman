@@ -35,6 +35,10 @@
   p:not(:first-of-type) {
     margin: 10px 5px;
   }
+
+  img {
+      border-radius: 100px;
+  }
   
   #navigation {
     background: rgb(116, 112, 112);
@@ -49,15 +53,18 @@
     #navigation > ul > li {
         position: relative;
     }
-    #navigation > ul > li:hover > ul {
+   #navigation > ul > li:hover > ul {
         display: block;
+    }
+    ul li ul {
+        display:none;
     }
   
   #navigation > ul > li > ul {
       position: absolute;
       background-color: rgb(32, 63, 32);
       display: none;
-      top: 0;
+      top: 30;
       left: 0;
 
   }
@@ -82,6 +89,7 @@
   
   #content {
     background: whitesmoke;
+   
     /* padding: 10px 0; */
   }
   
