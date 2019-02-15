@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="../styles/style.css">
   <title>Contact Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 </head>
+
 <body>
   <div class="container">
     <div id="navigation">
@@ -15,47 +21,67 @@
         <li><a href="../blog/">Blog</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="../projects/">Projects</a>
-            <ul>
-                <li><a href=""></a>First</li>
-                <li><a href=""></a>Second</li>
-                <li><a href=""></a>Third</ul>
-            </ul>
-           </li>
+          <ul>
+            <li><a href=""></a>First</li>
+            <li><a href=""></a>Second</li>
+            <li><a href=""></a>Third
+          </ul>
+      </ul>
+      </li>
       </ul>
     </div>
     <div id="header">
       <h1>Get In Touch</h1>
+      
     </div>
 
     <div id="content">
-      <form action="https://formspree.io/engelman12990@gmail.com" method="POST">
-        <label for="fname">First Name</label>
-        <input type="text" name="fname" id="fname" required>
-        
-        <label for="lname">Last Name</label>
-        <input type="text" name="lname" id="lname" required>
+      <div class="container">
+        <form action="https://formspree.io/engelman12990@gmail.com" method="POST">
+          <fieldset>
+            <label for="fname">First Name</label> <br>
+            <input type="text" name="fname" id="fname" required><br>
 
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" required>
+            <label for="lname">Last Name</label><br>
+            <input type="text" name="lname" id="lname" required><br>
 
-        <label for="password">Password:</label>
-        <input type="password" name="password"
-        required>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" required><br>
 
-        <label for="fone">Phone</label>
-        <input type="tel" name="fone" id="fone">
+            <label for="password">Password</label><br>
+            <input type="password" name="password" required><br>
 
-        <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Please enter your message here"></textarea>
+            <label for="fone">Phone</label><br>
+            <input type="tel" name="fone" id="fone"><br><br>
 
-        <input type="submit" value="Submit">
-        <input type="reset" value="Clear">
-      </form>
+            <textarea name="msg" id="msg" cols="30" rows="10"
+              placeholder="Please enter your message here"></textarea><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+          </fieldset>
+        </form>
+        <img src="https://i.etsystatic.com/13289000/r/il/e96b7a/1283497713/il_fullxfull.1283497713_5rg6.jpg">
+        </div>
+      </div>
     </div>
 
     <div id="footer">
-
+        <ul>
+            <li><a href="https://www.linkedin.com/feed/">
+      
+                <i class="fab fa-linkedin"></i></i>
+                LinkedIn</a></li>
+            <li><a href="https://www.facebook.com/AmanduhhhEngelman">
+                <i class="fab fa-facebook"></i></i>
+                Facebook</a></li>
+            <li><a href="https://github.com/engelman12990">
+                <i class="fab fa-github"></i>
+                GitHub</a></li>
+          </ul>
     </div>
-   
+
   </div>
 </body>
+
 </html>

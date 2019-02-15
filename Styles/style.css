@@ -1,145 +1,140 @@
 * {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-  
-  a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  body {
-    background-color: rgb(180, 177, 177);
-    font-size: 20px;
-    grid-template-areas: "navigation"
-                         "header"
-                         "content"
-                         "footer";
-    grid-template-rows: min-content min-content auto min-content;
-    display: grid;
-    min-height: 100vh;
-  }
-  
-  h3:first-of-type {
-    margin-top: 10px;
-  }
-  
-  hr {
-    margin: 20px 0;
-  }
-  
-  figure {
-    text-align: center;
-  }
-  
-  ul {
-    list-style: none;
-  }
-  
-  ul li {
-    text-indent: 10px;
-  }
-  
-  p:not(:first-of-type) {
-    margin: 10px 5px;
-  }
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
 
-  img {
-      border-radius: 100px;
-      border: dotted 5px rgb(132, 138, 138);
-  }
-  
-  #navigation {
-    background: rgb(116, 112, 112);
-    padding: 16px;
-    text-transform: uppercase;
-    position: sticky;
-    top: 0;
-    grid-area: navigation;
-  }
+a {
+  text-decoration: none;
+  color: black;
+}
 
-    #navigation > ul > li {
-        position: relative;
-    }
-   #navigation > ul > li:hover > ul {
-        display: block;
-    }
-    ul li ul {
-        display:none;
-    }
-  
-  #navigation > ul > li > ul {
-      position: absolute;
-      background-color:rgb(171, 177, 174);
-      display: none;
-      top: 30;
-      left: 0;
+body {
+  background-color: rgb(180, 177, 177);
+  font-size: 20px;
+  font-family: 'Poiret One', cursive;
+  grid-template-areas: "navigation" "header" "content" "footer";
+  grid-template-rows: min-content min-content auto min-content;
+  display: grid;
+  min-height: 100vh;
+}
 
-  }
-  
-  #navigation a {
-    display: inline-block;
-    /* We need block or inline-block to have some properties like 'min-width' to have any effect. */
-    min-width: 48px;
-  }
-  
-  #navigation > ul > li {
-    display: inline;
-    margin-right: 25px;
-    text-decoration: none;
-  }
-  #navigation > ul {
-      display: flex;
-      justify-content: space-around;
-    
-  }
-  
-  #header {
-  
-    color: rgb(27, 29, 28);
-    grid-area: header; 
-  }
-  
-  #content {
-    background: whitesmoke;
-    grid-area: content;
- 
-  }
+h3:first-of-type {
+  margin-top: 10px;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+figure {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  text-indent: 10px;
+}
+
+p:not(:first-of-type) {
+  margin: 10px 5px;
+}
+
+img {
+  border-radius: 100px;
+  border: dotted 5px rgb(132, 138, 138);
+}
+
+#navigation {
+  background: rgb(116, 112, 112);
+  padding: none;
+  text-transform: uppercase;
+  position: sticky;
+  top: 0;
+  grid-area: navigation;
+}
+
+#navigation>ul>li {
+  position: relative;
+}
+
+#navigation>ul>li:hover>ul {
+  display: block;
+}
+
+ul li ul {
+  display: none;
+}
+
+#navigation>ul>li>ul {
+  position: absolute;
+  background-color: rgb(171, 177, 174);
+  display: none;
+  top: 30;
+  left: 0;
+}
+
+#navigation a {
+  display: inline-block;
+  /* We need block or inline-block to have some properties like 'min-width' to have any effect. */
+  min-width: 0px;
+}
+
+#navigation>ul>li {
+  display: inline;
+  margin-right: 25px;
+  text-decoration: none;
+}
+
+#navigation>ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+#header {
+  color: rgb(27, 29, 28);
+  grid-area: header;
+}
+
+#content {
+  background: whitesmoke;
+  grid-area: content;
+}
 
 #footer {
-    background-color: darkgray;
-    grid-area: footer;
+  
+  background-color: darkgray;
+  grid-area: footer;
 }
-  
-  .flt-lft {
-    float: left;
-    margin-right: 20px;
-  }
-  
-  .container {
-    margin: auto;
-    max-width: 960px;
-  }
-  
-  .container > div {
-    padding-top: 10px;
-  }
-  
-  li:hover {
-    background: cornsilk;
-  }
 
-  @media(min-width: 800px){
-      body {
-          grid-template-areas: "navigation header"
-                               "navigation  content"
-                               "navigation footer";
-          grid-template-rows: min-content auto min-content;
-          grid-template-columns: minmax(min-content,15vw) auto;
-      }  
-      #navigation > ul {
-          flex-direction:column;
-      }    
+.flt-lft {
+  float: left;
+  margin-right: 20px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.container>div {
+  padding-top: 10px;
+}
+
+li:hover {
+  background: cornsilk;
+}
+
+@media(min-width: 800px) {
+  body {
+    grid-template-areas: "navigation header" "navigation  content" "navigation footer";
+    grid-template-rows: min-content auto min-content;
+    grid-template-columns: minmax(min-content, 15vw) auto;
   }
-  
+  #navigation>ul {
+    flex-direction: column;
+  }
+}
