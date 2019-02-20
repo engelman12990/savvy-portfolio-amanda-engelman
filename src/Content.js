@@ -1,4 +1,5 @@
-export default `
+export default function Content(){
+    return `
 <div id="content">
     <div class="container">
       <figure class="flt-lft">
@@ -22,3 +23,4 @@ export default `
     </div>
   </div>
 `;
+}

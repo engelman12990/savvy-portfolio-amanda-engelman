@@ -1,4 +1,5 @@
-export default `
+export default function Footer(){
+    return `
   
 <div id="footer">
 <ul>
@@ -15,3 +16,4 @@ export default `
 </ul>
 </div>
 `;
+}

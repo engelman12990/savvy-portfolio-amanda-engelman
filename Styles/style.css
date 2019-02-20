@@ -9,7 +9,7 @@ a {
   color: black;
 }
 
-body {
+#root {
   background-color: rgb(180, 177, 177);
   font-size: 20px;
   font-family: 'Poiret One', cursive;
@@ -129,7 +129,7 @@ li:hover {
 }
 
 @media(min-width: 800px) {
-  body {
+  #root {
     grid-template-areas: "navigation header" "navigation  content" "navigation footer";
     grid-template-rows: min-content auto min-content;
     grid-template-columns: minmax(min-content, 15vw) auto;

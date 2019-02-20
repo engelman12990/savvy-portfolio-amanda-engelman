@@ -2,38 +2,16 @@ import Navigation from './src/Navigation';
 import Header from './src/Header';
 import Content from './src/Content';
 import Footer from './src/Footer';
+import nameChecker from './src/Greeter';
 
-var originalContent = document.body.innerHTML;
+var root = document.querySelector('#root');
 
-document.body.innerHTML = `
-${Navigation}
-${Header}
-${Content}
-${Footer}
-${originalContent}
+root.innerHTML = `
+${Navigation()}
+${Header('Welcome to my Savvy Coders website!')}
+${Content()}
+${Footer()}
 `;
 
-// Put 'name' in the global scope so it is reliably accessible by both functions.
-var name;
-
-// Verify that user entered some name
-var blankChecker = function blankChecker(){ // We should also add an explicit name in our fxn. declaration as that will help us with tracing possible errors.
-    if(name === ''){
-        name = prompt('For real, enter your name!');
-        
-        // RECURSION
-        blankChecker();
-    }
-};
-
-// 'Main' fxn. to start the program
-var nameChecker = function nameChecker(){
-    name = prompt('Please enter your name!');
-    
-    // Check for a blank name!
-    blankChecker();
-    
-    document.querySelector('h1').textContent = `Hello, ${name}`;
-};
 
 nameChecker();
