@@ -14,6 +14,9 @@ export default function Content(){
         <p>I'm 28 years old. I have 2 rescue pets: Peepaw & Meeps.</p>
         <small>They are my fur children.</small></p>
 
+        <div> 
+        <button>Click Me!</button></div>
+
         <hr>
 
         <h3>Skills</h3>
