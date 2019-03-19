@@ -1,4 +1,6 @@
-export default function Content(){
+export default function Content(posts){
+    console.log('content syas', posts);
+    
     return `
 <div id="content">
     <div class="container">

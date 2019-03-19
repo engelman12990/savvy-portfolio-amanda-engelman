@@ -1,25 +1,30 @@
-function linkBuilder(links){
-    var i = 0;
-    var linksHTML = '';
+import { lowerCase } from 'lodash';
 
-    while(i < links.length){
-        linksHTML += `
-     <li>
-        <a href='./${links[i]}'>${links[i]}</a>
-     </li>
-  `;
-        i++;
-    }
-    
-    return linksHTML;
+function buildLinks(linkArr){
+    var linkList = linkArr.map((link) => {
+        var destination = '';
+
+        if(link !== 'Home'){
+            destination = lowerCase(link);
+        }
+
+        return `<li>
+        <a data-navigo href="./${destination}">
+          ${link}
+        </a>
+      </li>
+      `;
+    }).join(' ');
+  
+    console.log(linkList);
+
+    return linkList;
 }
 
 export default function Navigation(state){
-    return `  
-    <div id="navigation">
+    return `<div id="navigation">
       <ul class="container">
-        ${linkBuilder(state.links)}
+        ${buildLinks(state.links)}
       </ul>
-    </div>
-  `;
+    </div>`;
 }
