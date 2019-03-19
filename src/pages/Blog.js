@@ -18,6 +18,5 @@ export default function Blog(){
       <p>Optio magni enim consequatur maxime blanditiis asperiores atque ipsam qui et, laboriosam
         incidunt deleniti, harum quo a ad, quia velit eos. Nam, corporis eveniet. Quasi distinctio
         delectus ratione molestiae exercitationem!</p>
-    </div>
-
+    </div>`;
 }

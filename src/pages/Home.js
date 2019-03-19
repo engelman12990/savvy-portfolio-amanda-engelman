@@ -20,5 +20,5 @@ export default function Home(){
 <h3>Skills</h3>
 <p>Below, find some links to real info about my knowledge and skills.</p>
 
-</div>
+</div>`;
 }

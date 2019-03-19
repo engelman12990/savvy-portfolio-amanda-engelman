@@ -23,5 +23,5 @@ export default function Contact(){
       <input type="submit" value="Submit">
       <input type="reset" value="Clear">
     </fieldset>
-  </form>
+  </form>`;
 }

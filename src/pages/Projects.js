@@ -14,5 +14,5 @@ export default function Projects(){
                         <i class="fab fa-github"></i>
                         GitHub</a></li>
                   </ul>
-    </div>
+    </div>`;
 }
